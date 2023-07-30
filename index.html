@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keral_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#experiences">experiences</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Java Developer</p>
+            <h1>Hi, I'm <span>Keral</span><br>Patel From Canada</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Keral.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a novice Java developer that is determined to learn new things and become the best at what I do. I am constantly looking for opportunities to progress as a developer, take on challenges, and help create ground-breaking Java apps that have an effect.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    
+                    <section id="skills">
+                        <h2>Skills</h2>
+                        <ul class="skill-list">
+                          <li><img src="images/icons8-java-eclipse-50.png" alt="eclipse"> 
+                          <h4>eclipse</h4></li>
+                          <li><img src="images/icons8-intellij-idea-48.png" alt="intellij-idea">
+                          <h4>intellij-idea</h4></li>
+                          <li><img src="images/icons8-amazon-web-services-48.png" alt="aws">
+                          <h4>aws</h4></li>
+                          <li><img src="images/icons8-jenkins-48.png" alt="jenkins">
+                            <h4>jenkins</h4></li>
+                            <li><img src="images/icons8-jira-48.png" alt="jira">
+                                <h4>jira</h4></li>
+                                <li><img src="images/icons8-json-48.png" alt="json">
+                                    <h4>json</h4></li>
+                                    <li><img src="images/icons8-mysql-48.png" alt="mysql">
+                                        <h4>mysql</h4></li>
+                                        <li><img src="images/icons8-tomcat-48.png" alt="tomcat">
+                                            <h4>tomcat</h4></li>
+                                            <li><img src="images/maven.png" sizes="50px" alt="maven">
+                                                <h4>maven</h4></li>
+                                                <li><img src="images/stc.png" alt="stc">
+                                                    <h4>stc</h4></li>
+                                                    <li><img src="images/css.png" alt="css">
+                                                        <h4>css</h4></li>
+                                                        <li><img src="images/html.png" alt="html">
+                                                            <h4>html</h4></li>
+                                                            <li><img src="images/git.png" alt="git">
+                                                                <h4>git</h4></li>
+                                                                <li><img src="images/junit-5-tutorial.png" alt="junit">
+                                                                    <h4>junit</h4></li>
+                                                                   
+                                                                            
+                          
+                          <!-- Add more skills -->
+                        </ul>
+                      </section>
+                    
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - 2023</span><br>junior developer at SkillFount Consultancy</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018</span><br>MASTER OF SCIENCE H.N.G.U, INDIA</li>
+                        <li><span>2016</span><br>BACHELOR OF SCIENCE H.N.G.U, INDIA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<!--<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>-->
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/employee management system.jpg">
+                <div class="layer">
+                    <h3>Employee Management System</h3>
+                    <p>Explore our Employee Management System website for easy HR management and improved productivity.</p>
+                    <a href="https://github.com/KeralPatel3095/employee"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/bookstore management.jpg">
+                <div class="layer">
+                    <h3>Book Store</h3>
+                    <p>Welcome to our Book Store Management system, designed to make running your bookstore easier with efficient organization and smooth operations.</p>
+                    <a href="https://github.com/KeralPatel3095/bookstore"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Onlin shooping.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Shop for stylish clothes online with ease and convenience at our one-stop shopping website.</p>
+                    <a href="https://github.com/KeralPatel3095/FashoinProject"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> Keralp312@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> (647) 864-3095</p>
+                <div class="social-icons">
+                    <!-- <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a> -->
+                    <!-- <a href=""><i class="fab fa-twitter-square"></i></a> -->
+                    <!-- <a href=""><i class="fab fa-instagram"></i></a> -->
+                    <a href="https://www.linkedin.com/in/keral-p-840076286/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/KeralPatel3095"><i class="fab fa-github"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="copyright">
+        <p>Copyright © Keral Made wtih <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Easy Tutorials</a></p>
+    </div> -->
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
